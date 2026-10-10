@@ -23,30 +23,7 @@ The tables are connected through a one to many relationship:
 
 "geocodes.id" → "solardata.geocodeid"
 
-NB! Se på ER-diagrammet png for bedre oversikt.
-
-### geocodes
-
-| Column | Type | Key | Description |
-|---|---|---|---|
-| id | INTEGER | PK | Unique identifier for each city |
-| city | TEXT | | City name |
-| country | TEXT | | Country code |
-| latitude | REAL | | Latitude |
-| longitude | REAL | | Longitude |
-
-### solardata
-
-| Column | Type | Key | Description |
-|---|---|---|---|
-| id | INTEGER | PK | Unique identifier for each record |
-| geocodeid | INTEGER | FK | References `geocodes.id` |
-| date | TEXT | | Date |
-| sunrise | TEXT | | Sunrise time |
-| sunset | TEXT | | Sunset time |
-| daylength | INTEGER | | Length of the day |
-| moonphase | TEXT | | Moon phase |
-| moonillumination | REAL | | Moon illumination |
+![ER Diagram](Geocodes-to-Solardata-Relationship-Diagram.png)
 
 ## SQL joins
 
