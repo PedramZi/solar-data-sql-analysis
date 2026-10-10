@@ -23,7 +23,7 @@ The tables are connected through a one to many relationship:
 
 "geocodes.id" → "solardata.geocodeid"
 
-![ER Diagram](Geocodes-to-Solardata-Relationship-Diagram.png)
+![ER Diagram](er-diagram.png)
 
 ## SQL joins
 
